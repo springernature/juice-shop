@@ -11,8 +11,17 @@ triggers:
   - .
 
 tasks:
+- type: run
+  name: test
+  script: ./test.sh
+  docker:
+    image: node:15.14.0-buster
+  save_artifacts:
+  - .
+
 - type: deploy-cf
   name: deploy-cf
   api: ((cloudfoundry.api-snpaas))
   space: dev
   manifest: manifest.yml
+  deploy_artifact: .
