@@ -4,7 +4,7 @@ applications:
   buildpacks:
     - https://github.com/cloudfoundry/nodejs-buildpack#v1.7.54
   command: npm start
-  memory: 2G
+  memory: 4G
   instances: 1
   stack: cflinuxfs3
   routes:
