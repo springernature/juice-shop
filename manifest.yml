@@ -10,3 +10,4 @@ applications:
   routes:
   - route: juice-shop-waf-test.springernature.app
   - route: juice-shop-waf-test.public.springernature.app
+  disk_quota: 2G
