@@ -11,8 +11,8 @@ triggers:
 
 tasks:
 - type: run
-  name: test
-  script: ./test.sh
+  name: build
+  script: ./build.sh
   docker:
     image: node:15.14.0
   save_artifacts:
