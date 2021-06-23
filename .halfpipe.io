@@ -1,5 +1,6 @@
 team: engineering-enablement
 pipeline: juice-shop-waf-test
+slack_channel: '#ee-china-performance'
 
 feature_toggles:
 - update-pipeline
@@ -23,4 +24,11 @@ tasks:
   api: ((cloudfoundry.api-snpaas))
   space: dev
   manifest: manifest.yml
+  deploy_artifact: .
+
+- type: deploy-cf
+  name: deploy-cf
+  api: ((cloudfoundry.api-snpaas))
+  space: dev
+  manifest: manifest-waf.yml
   deploy_artifact: .

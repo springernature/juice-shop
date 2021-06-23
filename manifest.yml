@@ -1,6 +1,6 @@
 ---
 applications:
-- name: juice-shop-waf-test
+- name: juice-shop
   buildpacks:
     - https://github.com/cloudfoundry/nodejs-buildpack#v1.7.54
   command: npm start
@@ -8,5 +8,5 @@ applications:
   instances: 1
   stack: cflinuxfs3
   routes:
-  - route: juice-shop-waf-test.springernature.app
+  - route: juice-shop.springernature.app
   disk_quota: 2G

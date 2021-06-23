@@ -1,0 +1,17 @@
+---
+applications:
+- name: juice-shop-waf
+  buildpacks:
+    - https://github.com/signalsciences/sigsci-cloudfoundry-buildpack.git
+    - https://github.com/cloudfoundry/nodejs-buildpack#v1.7.54
+  command: npm start
+  memory: 4G
+  instances: 1
+  stack: cflinuxfs3
+  routes:
+  - route: juice-shop-waf.springernature.app
+  disk_quota: 2G
+  env:
+    SIGSCI_ACCESSKEYID: ((ee-signalsciences-test.sigsci-access-key))
+    SIGSCI_SECRETACCESSKEY: ((ee-signalsciences-test.sigsci-secret-access-key))
+    SIGSCI_SERVER_HOSTNAME: juice-shop-agent
