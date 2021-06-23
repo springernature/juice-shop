@@ -20,14 +20,14 @@ tasks:
   - .
 
 - type: deploy-cf
-  name: deploy-cf
+  name: deploy-juice
   api: ((cloudfoundry.api-snpaas))
   space: dev
   manifest: manifest.yml
   deploy_artifact: .
 
 - type: deploy-cf
-  name: deploy-cf
+  name: deploy-juice-waf
   api: ((cloudfoundry.api-snpaas))
   space: dev
   manifest: manifest-waf.yml
