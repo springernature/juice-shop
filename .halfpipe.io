@@ -1,6 +1,5 @@
 team: engineering-enablement
 pipeline: juice-shop-waf-test
-slack_channel: '#ee-china-performance'
 
 feature_toggles:
 - update-pipeline
