@@ -32,3 +32,6 @@ tasks:
   space: dev
   manifest: manifest-waf.yml
   deploy_artifact: .
+  vars:
+    SIGSCI_ACCESSKEYID: ((ee-signalsciences-test.sigsci-access-key))
+    SIGSCI_SECRETACCESSKEY: ((ee-signalsciences-test.sigsci-secret-access-key))

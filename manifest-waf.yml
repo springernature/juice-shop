@@ -12,6 +12,4 @@ applications:
   - route: juice-shop-waf.springernature.app
   disk_quota: 2G
   env:
-    SIGSCI_ACCESSKEYID: ((ee-signalsciences-test.sigsci-access-key))
-    SIGSCI_SECRETACCESSKEY: ((ee-signalsciences-test.sigsci-secret-access-key))
     SIGSCI_SERVER_HOSTNAME: juice-shop-agent
